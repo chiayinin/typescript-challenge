@@ -2,7 +2,7 @@
  * 任務：實作一個函式 `createPersonalInfo`，建立一個個人資訊的物件。
  *
  * 範例：
- * createPersonalInfo('John Doe', 30, 'john@example.com') 應該回傳 
+ * createPersonalInfo('John Doe', 30, 'john@example.com') 應該回傳
  * {
  *   name: 'John Doe',
  *   age: 30,
@@ -22,5 +22,10 @@ export interface PersonalInfo {
 }
 
 export function createPersonalInfo(name: string, age: number, email: string): PersonalInfo {
-        // 請在此處寫下你的程式碼
+    // 請在此處寫下你的程式碼
+    return {
+        name,
+        age,
+        email
+    }
 }
