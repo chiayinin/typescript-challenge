@@ -6,4 +6,17 @@
  */
 
 // 請在下方寫下你的程式碼
-
+interface MyData {
+  id: string,
+  title: string,
+};
+export async function fetchData(url: string): Promise<any>{
+  let data: MyData | undefined;
+  try {
+    const response = await fetch(url);
+    data = await response.json();
+  } catch(error) {
+    console.dir(error);
+  }
+  return data
+}
