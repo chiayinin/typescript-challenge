@@ -24,7 +24,7 @@ export function createDataStore<T>() {
     //function getAll()
 
     let data: T[] = [];
-    const add = (item: T) => {
+    const add = (item: T): void => {
         data.push(item);
     };
     const getAll = (): T[] => data;
