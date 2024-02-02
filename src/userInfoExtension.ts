@@ -20,13 +20,14 @@ interface AddressInfo {
  */
 
 // 請在此處寫下你的程式碼
+interface FullUserInfo extends BasicUserInfo, AddressInfo {}
 
 
 /**
  * 任務：實作一個函式 `createFullUserInfo`，將使用者的基本資訊和地址資訊合併成一個物件。
  *
  * 範例：
- * createFullUserInfo({ name: 'John', age: 30, street: 'Main St', city: 'Metropolis' }) 
+ * createFullUserInfo({ name: 'John', age: 30, street: 'Main St', city: 'Metropolis' })
  * 應該回傳 { name: 'John', age: 30, street: 'Main St', city: 'Metropolis' }
  *
  * @param user - 一個物件，包含使用者的基本資訊和地址資訊
@@ -34,4 +35,5 @@ interface AddressInfo {
  */
 export function createFullUserInfo(user: FullUserInfo): FullUserInfo {
     // 請在此處寫下你的程式碼
+    return user
 }
